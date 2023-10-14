@@ -1,0 +1,28 @@
+.featuesItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16%;
+}
+.featuesItem__img {
+    background-color: #000;
+    height: 98px;
+    width: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 26px;
+}
+.featuesItem__src {
+    width: 72px;
+}
+.featuesItem__info {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Poppins-Light';
+    line-height: 18px;
+}
+.featuesItem__info_bold {
+    font-family: 'Poppins-Bold';
+}

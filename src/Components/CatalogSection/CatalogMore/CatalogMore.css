@@ -1,0 +1,22 @@
+.catalog-more {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.catalog-more__content {
+    line-height: 30px;
+    background: -webkit-linear-gradient(#000, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 12px;
+}
+.catalog-more__content.display {
+    background: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+}
+@media only screen and (max-width: 767px) {
+    .catalog-more {
+        display: none;
+    }
+}

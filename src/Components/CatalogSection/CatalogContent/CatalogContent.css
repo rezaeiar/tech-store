@@ -1,0 +1,16 @@
+.catalog-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.catalog-content__box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+@media only screen and (max-width: 767px) {
+    .catalog-content {
+        order: -1;
+    }
+}

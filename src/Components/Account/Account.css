@@ -1,0 +1,46 @@
+.account {
+    width: 232px;
+    padding: 26px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .14);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, .2);
+    font-size: 14px;
+    font-family: 'Poppins-Medium';
+    position: absolute;
+    top: 56px;
+    right: 0;
+}
+.account-triangle {
+    width: 0;
+    height: 0;
+    border-bottom: solid 5px rgba(0, 0, 0, .2);
+    border-top: solid 5px transparent;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    position: absolute;
+    top: -10px;
+    right: 12px;
+}
+.account-triangle::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-bottom: solid 5px #fff;
+    border-top: solid 4px transparent;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    top: -3px;
+    left: -5px;
+}
+.account-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+.account-list__link {
+    color: #000;
+    line-height: 26px;
+}

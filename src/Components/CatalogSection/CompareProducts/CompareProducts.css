@@ -1,0 +1,27 @@
+.compare-products {
+    background-color: #F5F7FF;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.compare-products__head {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.compare-products__title {
+    font-size: 16px;
+    font-family: 'Poppins-Bold';
+}
+.compare-products__content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.compare-products__message {
+    font-size: 12px;
+    text-align: center;
+}

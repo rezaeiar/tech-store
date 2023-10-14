@@ -1,0 +1,15 @@
+.banner__src {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+    .md-full {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .banner {
+        display: none;
+    }
+}

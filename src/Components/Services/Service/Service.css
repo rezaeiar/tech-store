@@ -1,0 +1,49 @@
+.service {
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service__icon {
+    height: 68px;
+    width: 68px;
+    background-color: #0156FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+.service__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service__title {
+    font-size: 18px;
+    font-family: 'Poppins-Bold';
+    margin-bottom: 12px;
+}
+.service__info {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins-Regular';
+}
+
+@media only screen and (max-width: 1023px) {
+    .service__icon {
+        height: 45px;
+        width: 45px;
+    }
+    .service__title {
+        font-size: 14px;
+    }
+    .service__info {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .service {
+        margin-bottom: 20px;
+    }
+}

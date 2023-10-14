@@ -1,0 +1,52 @@
+.offer-banner {
+    height: 70px;
+    width: 100%;
+    background-color: #F5F7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+.offer-banner__line {
+    height: 36%;
+    width: 2px;
+    background-color: #00AEB8;
+}
+.offer-banner__content {
+    font-size: 18px;
+    color: #272560;
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+}
+.offer-banner__text {
+    display: flex;
+    column-gap: 6px;
+}
+.offer-banner__content_bold {
+    font-family: 'Poppins-SemiBold';
+}
+.offer-banner__link {
+    font-size: 14px;
+    color: #272560;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+    .offer-banner {
+        height: 100px;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .offer-banner__img {
+        width: 38px;
+    }
+    .offer-banner__line {
+        display: none;
+    }
+    .offer-banner__content {
+        flex-direction: column;
+        row-gap: 10px;
+        font-size: 12px;
+    }
+}

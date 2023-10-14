@@ -1,0 +1,21 @@
+.bandcamp {
+    margin: 20px 0;
+    font-family: 'Poppins-Regular';
+}
+.bandcamp__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+.bandcamp__item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    column-gap: 4px;
+}
+.bandcamp__item.last {
+    color: #A2A6B0;
+}
+.bandcamp__icon {
+    color: #0156FF;
+}

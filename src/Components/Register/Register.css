@@ -1,0 +1,8 @@
+.register {
+    margin-bottom: 58px;
+}
+@media only screen and (max-width: 767px) {
+    .register {
+        margin-bottom: 16px;
+    }
+}

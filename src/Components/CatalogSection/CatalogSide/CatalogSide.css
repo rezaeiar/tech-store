@@ -1,0 +1,30 @@
+.catalog-side {
+    width: 234px;
+    font-size: 14px;
+}
+.catalog-side__back {
+    height: 50px;
+    width: 100%;
+    font-family: 'Poppins-SemiBold';
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.catalog-side__link {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 1023px) {
+    .catalog-side__back {
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .catalog-side {
+        width: 100%;
+    }
+}

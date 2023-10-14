@@ -1,0 +1,53 @@
+.shop-info {
+    width: 262px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 24px;
+    z-index: 1;
+    font-family: 'Poppins-Regular';
+}
+.shop-info::before {
+    content: '';
+    border: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+.shop-info__section {
+    display: flex;
+    border-bottom: 1px solid #CACDD8;
+}
+.section__wrapper {
+    padding: 12px 10px;
+    display: flex;
+    column-gap: 10px;
+}
+.shop-info__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+.shop-info__info {
+    font-size: 13px;
+    line-height: 20px;
+}
+.shop-info__info_bold {
+    font-family: 'Poppins-SemiBold';
+}
+.shop-info__highlight {
+    color: #A2A6B0;
+}
+.shop-info__address {
+    color: #0156FF;
+}
+
+@media only screen and (max-width: 767px) {
+    .shop-info {
+        top: 34px;
+    }
+}

@@ -1,0 +1,30 @@
+.catalog-pagination {
+    display: flex;
+    column-gap: 12px;
+    align-self: center;
+    margin-bottom: 68px;
+}
+.catalog-pagination__item {
+    height: 38px;
+    min-width: 38px;
+    color: #A2A6B0;
+    border: 2px solid #A2A6B0;
+    font-size: 13px;
+    font-family: 'Poppins-SemiBold';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.catalog-pagination__item.current {
+    background-color: #F5F7FF;
+    color: #000;
+    border: none;
+    cursor: auto;
+}
+.catalog-pagination__point {
+    display: flex;
+    align-items: center;
+    color: #A2A6B0;
+}

@@ -1,0 +1,14 @@
+.services.bg-color {
+    background-color: #F5F7FF;
+}
+.services__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 40px;
+}
+@media only screen and (max-width: 767px) {
+    .services__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}

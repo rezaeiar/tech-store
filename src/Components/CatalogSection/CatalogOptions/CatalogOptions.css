@@ -1,0 +1,127 @@
+.catalog-options {
+    display: flex;
+    flex-direction: column;
+}
+.catalog-options__display {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog-options__result {
+    font-size: 13px;
+    color: #A2A6B0;
+}
+.catalog-options-sort {
+    height: 100%;
+    display: flex;
+    column-gap: 6px;
+}
+.catalog-options-sort__box {
+    height: 100%;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+.catalog-options-sort__btn {
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #CACDD8;
+    border-radius: 2px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    color: #000;
+    font-family: 'Poppins-SemiBold';
+    padding: 0 12px;
+    position: relative;
+    cursor: pointer;
+}
+.catalog-options-sort__btn.filter {
+    display: none;
+}
+.catalog-options-sort__title {
+    color: #A2A6B0;
+}
+.catalog-options-sort__type {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.catalog-options-sort__icon {
+    color: #A2A6B0;
+    font-size: 20px;
+}
+.catalog-options-sort__type.active .catalog-options-sort__icon {
+    color: #000;
+}
+.filter-items {
+    height: 38px;
+}
+.filter-items__list {
+    height: 100%;
+    display: flex;
+    column-gap: 6px;
+}
+.filter-items__item {
+    border: 1px solid #CACDD8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    border-radius: 2px;
+    font-size: 13px;
+    font-family: 'Poppins-SemiBold';
+    column-gap: 4px;
+}
+.filter-items__clear {
+    cursor: pointer;
+}
+.filter-items__count {
+    color: #A2A6B0;
+    font-family: 'Poppins-Regular';
+}
+.filter-items__icon {
+    font-size: 20px;
+    color: #C94D3F;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1023px) {
+    .filter-items, .catalog-options-sort__btn:first-child {
+        display: none;
+    }
+    .catalog-options-sort__btn {
+        height: 40px;
+        font-size: 11px;
+    }
+    .catalog-options__result {
+        font-size: 11px;
+    }
+    .catalog-title__value {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .catalog-options-sort__type {
+        display: none;
+    }
+    .catalog-options__display {
+        flex-direction: column;
+        height: 66px;
+    }
+    .catalog-options__result {
+        order: 1;
+        align-self: flex-start;
+    }
+    .catalog-options-sort, .catalog-options-sort__box {
+        width: 100%;
+    }
+    .catalog-options-sort__btn {
+        width: 50%;
+        justify-content: center;
+    }
+    .catalog-options-sort__btn.filter {
+        display: flex;
+    }
+}

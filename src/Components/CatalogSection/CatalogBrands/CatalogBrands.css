@@ -1,0 +1,45 @@
+.catalog-brands {
+    background-color: #F5F7FF;
+    border: 2px solid #F5F7FF;
+    margin-bottom: 10px;
+}
+.catalog-brands__head {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog-brands__title {
+    font-size: 16px;
+    font-family: 'Poppins-Bold';
+    margin-bottom: 10px;
+}
+.catalog-brands__content {
+    display: flex;
+    column-gap: 2px;
+    row-gap: 2px;
+    flex-wrap: wrap;
+}
+.catalog-brands__item {
+    width: calc(50% - 1px);
+    background-color: #fff;
+}
+.catalog-brands__link {
+    height: 100%;
+    width: 100%;
+}
+.catalog-brands__src {
+    width: 100%;
+}
+@media only screen and (max-width: 1023px) {
+    
+}
+@media only screen and (max-width: 767px) {
+    .catalog-brands {
+        display: none;
+    }
+    .catalog-side {
+        width: 100%;
+    }
+}

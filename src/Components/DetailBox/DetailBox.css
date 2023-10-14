@@ -1,0 +1,35 @@
+.detail-box {
+    height: 540px;
+    background-color: #010101;
+}
+.detail-box__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.detail-box__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+.detail-box__title {
+    font-size: 34px;
+    font-family: 'Poppins-Medium';
+    color: #fff;
+    margin-bottom: 60px;
+}
+.detail-box__desc {
+    font-size: 14px;
+    font-family: 'Poppins-Light';
+    color: #fff;
+}
+.detail-box__img {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+}
+.detail-box__src {
+    height: 100%;
+    max-width: 100%;
+}

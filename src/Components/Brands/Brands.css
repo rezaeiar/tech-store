@@ -1,0 +1,28 @@
+.brands {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.brands__link {
+    display: flex;
+    padding: 20px 24px;
+    width: auto;
+}
+.brands__img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+    .brands {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .brands__item {
+        width: 33%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .brands__item {
+        width: 40%;
+    }
+}

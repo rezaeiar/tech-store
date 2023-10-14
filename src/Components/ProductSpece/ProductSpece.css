@@ -1,0 +1,23 @@
+.productSpece {
+    margin-bottom: 28px;
+    border: 1px solid #CACDD8;
+    width: 70%;
+}
+.productSpece__item {
+    background-color: #fff;
+    padding: 14px 10px;
+    font-size: 14px;
+    font-family: 'Poppins-Regular';
+    display: flex;
+}
+.productSpece__item:nth-child(even) {
+    background-color: #F5F7FF;
+}
+.productSpece__section {
+    width: 40%;
+    display: flex;
+}
+.productSpece__section.value {
+    color: #666666;
+    width: 60%;
+}

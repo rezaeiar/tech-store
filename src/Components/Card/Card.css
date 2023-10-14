@@ -1,0 +1,227 @@
+.card {
+    width: 251px;
+    height: fit-content;
+    padding: 10px 24px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins-Regular';
+    background-color: #fff;
+    position: relative;
+    row-gap: 10px;
+}
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .14);
+    z-index: 2;
+}
+.card.static {
+    width: 25%;
+}
+.card__inventory {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+.card__inventory_available {
+    color: #78A962;
+}
+.card__inventory_unavailable {
+    color: #C94D3F;
+}
+.card__img {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.card__src {
+    height: 100%;
+    max-width: 100%;
+}
+.card__feedback {
+    display: flex;
+    column-gap: 8px;
+}
+.card__stars {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.card__star {
+    color: #CACDD8;
+}
+.card__star.filled {
+    color: #E9A426;
+}
+.card__reviews {
+    font-size: 12px;
+    color: #A2A6B0;
+}
+.card__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.card__sku {
+    font-size: 12px;
+    font-family: 'Poppins-Light';
+    display: none;
+}
+.card__title {
+    font-size: 13px;
+    color: #000;
+}
+.card__button {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: -56px;
+    background-color: #fff;
+    padding: 10px 24px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, .14);
+}
+.card:hover .card__button {
+    display: flex;
+}
+.card-price-box {
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.card-price-box__original {
+    font-size: 14px;
+    color: #666666;
+    text-decoration: line-through;
+}
+.card-price-box__final {
+    font-size: 18px;
+    font-family: 'Poppins-SemiBold';
+    color: #000;
+}
+.card-list {
+    display: none;
+    flex-direction: column;
+    width: 20%;
+}
+.card-list__item {
+    font-size: 12px;
+    display: flex;
+    padding: 10px;
+}
+.card-list__item:nth-child(even) {
+    background-color: #F5F7FF;
+}
+.card-list__key {
+    color: #000000;
+    width: 50%;
+}
+.card-list__value {
+    color: #666666;
+    width: 50%;
+}
+.cart-actions {
+    align-self: flex-end;
+    display: none;
+    column-gap: 6px;
+}
+
+/* list cards */
+
+.card.list {
+    width: 100%;
+    flex-direction: row;
+    padding: 44px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.card.list .card__img {
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+.card.list .card__header {
+    width: 20%;
+}
+.card.list .card__content {
+    width: 34%;
+}
+.card.list .card__sku {
+    display: flex;
+}
+.card.list .card__title {
+    margin-bottom: 20px;
+}
+.card.list .card-price-box {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.card.list .card__button {
+    display: flex;
+    justify-content: center;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: unset;
+    justify-content: flex-start;
+}
+.card.list .card-list {
+    display: flex;
+}
+.card.list .card__inventory {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.card.list .cart-actions {
+    display: flex;
+}
+
+@media only screen and (max-width: 1023px) {
+    .card.static {
+        width: 33%;
+    }
+    .card.list {
+        width: 100%;
+    }
+    .card.list .card-list {
+        display: none;
+    }
+    .card.list .card__header {
+        width: 32%;
+    }
+    .card.list .card__content {
+        width: 38%;
+    }
+    .card__reviews {
+        font-size: 10px;
+    }
+    .card__title {
+        font-size: 11px;
+    }
+    .card__sku {
+        font-size: 10px;
+    }
+    .card-price-box__price.card-price-box__original {
+        font-size: 11px;
+    }
+    .card-price-box__price.card-price-box__final {
+        font-size: 13px;
+    }
+    .card.list .card-price-box {
+        column-gap: 6px;
+    }
+    .card__stars {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .card.static {
+        width: 50%;
+    }
+    .card.list {
+        width: 100%;
+    }
+}

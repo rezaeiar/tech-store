@@ -1,0 +1,48 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    /* width: 49%; */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.input__title {
+    font-size: 13px;
+    font-family: 'Poppins-SemiBold';
+    margin-bottom: 12px;
+}
+.input__icon {
+    color: #C94D3F;
+}
+.input__field {
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #A2A6B0;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Poppins-Light';
+}
+.input__textarea {
+    width: 100%;
+}
+.input.textarea {
+    width: 100% !important;
+}
+.input.textarea .input__field {
+    height: 236px;
+    padding: 12px;
+    resize: none;
+}
+@media only screen and (max-width: 1023px) {
+    .input {
+        width: 100% !important;
+    }
+    .input__title {
+        font-size: 11px;
+    }
+    .input__field {
+        font-size: 12px;
+        height: 38px;
+        padding: 0 12px;
+    }
+}

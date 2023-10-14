@@ -1,0 +1,46 @@
+@import 'reset.css';
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url(/public/fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(/public/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(/public/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(/public/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(/public/fonts/Poppins-Bold.ttf);
+}
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+}
+
+.container {
+    height: 100%;
+    max-width: 1398px;
+    padding: 0 1rem;
+    margin: auto;
+}
+@media only screen and (max-width: 1023px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 14px;
+    }
+}

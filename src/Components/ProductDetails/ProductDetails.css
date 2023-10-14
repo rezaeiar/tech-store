@@ -1,0 +1,9 @@
+.productDetails__list {
+    font-size: 14px;
+    font-family: 'Poppins-Light';
+    margin-bottom: 28px;
+}
+.productDetails__item {
+    margin-bottom: 12px;
+    list-style: disc;
+}

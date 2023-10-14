@@ -1,0 +1,8 @@
+.catalog-title {
+    margin-bottom: 20px;
+}
+.catalog-title__value {
+    font-size: 32px;
+    font-family: 'Poppins-SemiBold';
+    text-transform: capitalize;
+}
