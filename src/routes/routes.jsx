@@ -7,7 +7,7 @@ import Register from "../Components/Register/Register";
 import Login from "../Components/Login/Login";
 import ShoppingCart from "../Pages/ShoppingCart/ShoppingCart";
 import Redirect from "../Pages/Redirect";
-import NotFound from "../Pages/notfound/notfound";
+import NotFound from '../Pages/NotFound/NotFound'
 
 const routes = [
     { path: '/', element: <Home /> },
