@@ -43,7 +43,7 @@ function Register() {
                     password
                 }
 
-                fetch('http://localhost:3000/users/', {
+                fetch('https://tech-store-db.vercel.app/users/', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"

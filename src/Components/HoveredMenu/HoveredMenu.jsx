@@ -13,7 +13,7 @@ function HoveredMenu() {
 
     useEffect(() => {
 
-        fetch('http://localhost:3000/products?score=5')
+        fetch('https://tech-store-db.vercel.app/products?score=5')
             .then(res => res.json())
             .then(result => {
                 setProduitsPopulaires(result)

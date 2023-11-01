@@ -52,7 +52,7 @@ function NavBar() {
         authContext.setIsShowSearch(true);
 
         let filteredProducts = []
-        fetch(`http://localhost:3000/products`)
+        fetch(`https://tech-store-db.vercel.app/products`)
             .then(res => res.json())
             .then(products => {
                 filteredProducts = products.filter(product => {

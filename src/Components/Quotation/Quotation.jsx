@@ -10,7 +10,7 @@ export default function Quotation() {
     const [paginateNumbers, setPaginateNumbers] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3000/quotations')
+        fetch('https://tech-store-db.vercel.app/quotations')
             .then(res => res.json())
             .then(result => {
                 setAllQuotations(result)

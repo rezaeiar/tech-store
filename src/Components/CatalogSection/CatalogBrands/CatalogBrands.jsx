@@ -16,7 +16,7 @@ function CatalogBrands() {
     });
     const [allBrands, setAllBrand] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:3000/brands`)
+        fetch(`https://tech-store-db.vercel.app/brands`)
             .then(res => res.json())
             .then(brands => {
                 setAllBrand(brands)

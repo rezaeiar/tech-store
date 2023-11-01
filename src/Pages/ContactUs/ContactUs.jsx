@@ -40,7 +40,7 @@ function ContactUs() {
                 userText
             }
 
-            fetch('http://localhost:3000/contact', {
+            fetch('https://tech-store-db.vercel.app/contact', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

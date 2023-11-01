@@ -23,7 +23,7 @@ function Product() {
         window.scrollTo({ top: 0, behavior: "smooth" })
     }, [])
     useEffect(() => {
-        fetch(`http://localhost:3000/products?id=${param.productID}`)
+        fetch(`https://tech-store-db.vercel.app/products?id=${param.productID}`)
             .then(res => {
                 return res.json()
             })

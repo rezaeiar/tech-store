@@ -6,7 +6,7 @@ export default function ProductsProvider({ children }) {
     const [allProducts, setAllProducts] = useState()
 
     useEffect(() => {
-        fetch('http://localhost:3000/products')
+        fetch('https://tech-store-db.vercel.app/products')
             .then(res => res.json())
             .then(products => {
                 setAllProducts(products)

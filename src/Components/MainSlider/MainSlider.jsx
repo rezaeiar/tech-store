@@ -13,7 +13,7 @@ function MainSlider() {
 
     useEffect(() => {
 
-        fetch('http://localhost:3000/sliderSlides')
+        fetch('https://tech-store-db.vercel.app/sliderSlides')
             .then(res => res.json())
             .then(slides => {
                 setSliderSlides(slides)
