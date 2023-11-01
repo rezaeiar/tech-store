@@ -5,8 +5,8 @@ import authContext from './contexts/authContext'
 import Footer from './Components/Footer/Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import SerachBox from './Components/SearchBox/SearchBox'
-import HeaderBar from './Components/Header/HeaderBar/HeaderBar'
-import NavBar from './Components/Header/Navbar/Navbar'
+import HeaderBar from './Components/HeaderBar/HeaderBar'
+import NavBar from './Components/NavBar/NavBar'
 
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css'

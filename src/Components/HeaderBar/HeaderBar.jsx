@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BiChevronDown, BiChevronUp, BiLogoFacebookSquare } from 'react-icons/bi'
 import { AiFillInstagram } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
-import ShopInfo from '../../ShopInfo/ShopInfo'
+import ShopInfo from '../ShopInfo/ShopInfo'
 
 import './HeaderBar.css'
 
