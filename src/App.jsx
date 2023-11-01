@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { useRoutes } from 'react-router-dom'
 import routes from './routes/routes'
-import Header from './Components/Header/Header'
 import authContext from './contexts/authContext'
 import Footer from './Components/Footer/Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import SerachBox from './Components/SearchBox/SearchBox'
+import HeaderBar from './Components/Header/HeaderBar/HeaderBar'
+import NavBar from './Components/Header/Navbar/Navbar'
 
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
@@ -78,7 +79,10 @@ function App() {
             }}>
                 <SerachBox show={isShowSearch} items={searchItems} />
                 <div className="app">
-                    <Header />
+                    <div className="header">
+                        <HeaderBar />
+                        <NavBar />
+                    </div>
                     {router}
                     <Footer />
                 </div>
