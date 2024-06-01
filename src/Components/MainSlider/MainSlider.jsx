@@ -13,7 +13,7 @@ function MainSlider() {
 
     useEffect(() => {
 
-        fetch('https://tech-store-db.vercel.app/sliderSlides')
+        fetch('https://techstore-db.liara.run/sliderSlides')
             .then(res => res.json())
             .then(slides => {
                 setSliderSlides(slides)

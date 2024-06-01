@@ -43,7 +43,7 @@ function Register() {
                     password
                 }
 
-                fetch('https://tech-store-db.vercel.app/users/', {
+                fetch('https://techstore-db.liara.run/users/', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"

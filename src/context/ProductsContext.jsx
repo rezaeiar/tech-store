@@ -6,7 +6,7 @@ export default function ProductsProvider({ children }) {
     const [allProducts, setAllProducts] = useState()
 
     useEffect(() => {
-        fetch('https://tech-store-db.vercel.app/products')
+        fetch('https://techstore-db.liara.run/products')
             .then(res => res.json())
             .then(products => {
                 setAllProducts(products)

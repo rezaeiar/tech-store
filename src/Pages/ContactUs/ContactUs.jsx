@@ -40,7 +40,7 @@ function ContactUs() {
                 userText
             }
 
-            fetch('https://tech-store-db.vercel.app/contact', {
+            fetch('https://techstore-db.liara.run/contact', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

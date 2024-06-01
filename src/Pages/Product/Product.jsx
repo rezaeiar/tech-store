@@ -23,7 +23,7 @@ function Product() {
         window.scrollTo({ top: 0, behavior: "smooth" })
     }, [])
     useEffect(() => {
-        fetch(`https://tech-store-db.vercel.app/products?id=${param.productID}`)
+        fetch(`https://techstore-db.liara.run/products?id=${param.productID}`)
             .then(res => {
                 return res.json()
             })

@@ -31,7 +31,7 @@ function Login() {
     const loginUser = () => {
         if (email && password) {
 
-            fetch(`https://tech-store-db.vercel.app/users?email=${email}&password=${password}`, {
+            fetch(`https://techstore-db.liara.run/users?email=${email}&password=${password}`, {
                 method: "GET"
             })
                 .then(res => res.json())

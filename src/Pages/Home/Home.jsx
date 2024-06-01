@@ -27,7 +27,7 @@ function Home() {
 
     useEffect(() => {
 
-        fetch('https://tech-store-db.vercel.app/products')
+        fetch('https://techstore-db.liara.run/products')
             .then(res => res.json())
             .then(products => {
                 setAllProducts(products)

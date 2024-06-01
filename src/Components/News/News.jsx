@@ -8,7 +8,7 @@ function News() {
     const [allNews, setAllNews] = useState([])
 
     useEffect(() => {
-        fetch('https://tech-store-db.vercel.app/news?_page=first&_limit=10')
+        fetch('https://techstore-db.liara.run/news?_page=first&_limit=10')
             .then(res => res.json())
             .then(result => {
                 setAllNews(result)
